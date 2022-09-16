@@ -14,7 +14,7 @@
   </p>
   <p>
     caption>colgroup caption 부모 colgroup 자식
-    caption+colgroup caption 형 colgroup 자식
+    caption+colgroup caption 형 colgroup 동생
   </p>
   <!-- table>caption+colgroup>col*3 -->
   <table border="1" width="80%">
@@ -24,7 +24,18 @@
       <col>
       <col>
     </colgroup>
-    <!-- 3줄3칸 -->
+    <!--
+       3줄 tr*3
+       3칸 td*3>{내용}
+      -->
+      <!--
+         3줄 tr*3
+         3칸
+           1줄 제목셀 th*3
+          2,3줄 1칸제목셀 th
+                2,칸 데이타셀 td*2-->
+    <!--1줄 제목셀th 3 th*3  -->
+    <!-- tr>th*3 -->
     <tr>
       <td>text</td>
       <td>text</td>
@@ -40,6 +51,8 @@
       <td>text</td>
       <td>text</td>
     </tr>
+
+
 
     <tr>
       <th></th>
@@ -53,7 +66,11 @@
     </tr>
 
   </table>
+
   <hr>
+
+   <!-- 1줄 제목셀th 3 th*3 -->
+   <!-- tr>th*3 -->
   <table>
     <!-- caption colgroup 형제 -->
     <!-- caption+colgroup -->
@@ -63,6 +80,12 @@
      <col>
      <col>
     </colgroup>
+    <!-- 3줄 tr*3
+    3칸
+       1줄 제목셀th 3 th*3
+       2줄,3줄 1칸제목셀 th
+               2,3칸 데이터셀 t
+   -->
     <tr>
       <th>text</th>
       <th>text</th>
