@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>폼연습</legend>
+
+        <div>
+          <input type="checkbox" id="tv">
+          <label for="tv">TV</label>
+          <input type="checkbox" id="news">
+          <label for="news">뉴스</label>
+        </div>
+        <div>
+          <p>
+            라디오버튼<br>
+            라디오버튼 네임값을 동일하게 줄때
+          </p>
+          <div>
+            <label for="shipping">배</label>
+            <input 
+             type="radio" 
+             id="shipping" 
+             name="shipping"
+             checked="checked">
+            <label for="shipping">비행기</label>
+            <input type="radio" id="shipping" name="shipping">
+            <label for="shipping">기차</label>
+            <input type="radio" id="shipping" name="shipping">
+          </div>
+          <div>
+            <input type="reset" value="취소">
+            <input type="submit" value="확인">
+          </div>
+        </div>
+    </fieldset>
+  </form>
+</body>
+</html>
