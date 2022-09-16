@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table-col</title>
+</head>
+<body>
+  <h1>테이블 컬럼지정</h1>
+  <p>
+    emmet 부모>자식
+    emmet 형제 + 바로뒤형제
+  </p>
+  <p>
+    caption>colgroup caption 부모 colgroup 자식
+    caption+colgroup caption 형 colgroup 자식
+  </p>
+  <!-- table>caption+colgroup>col*3 -->
+  <table border="1" width="80%">
+    <caption>테이블제목</caption>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <!-- 3줄3칸 -->
+    <tr>
+      <td>text</td>
+      <td>text</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>text</td>
+      <td>text</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>text</td>
+      <td>text</td>
+      <td>text</td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>text</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>text</td>
+      <td>text</td>
+    </tr>
+
+  </table>
+  <hr>
+  <table>
+    <!-- caption colgroup 형제 -->
+    <!-- caption+colgroup -->
+    <caption></caption>
+    <colgroup>
+     <col>
+     <col>
+     <col>
+    </colgroup>
+    <tr>
+      <th>text</th>
+      <th>text</th>
+      <th>text</th>
+    </tr>
+  
+   
+  </table>
+
+</body>
+</html>
