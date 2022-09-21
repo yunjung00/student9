@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>padding_width_height</title>
+  <style>
+    *{margin:0; padding:0;}
+    .wrap{
+      width:1190px;
+      /*블록레벨 가운데 정렬*/
+      /*부모에게 너비지정*/
+      /*margin:0 auto;*/
+      margin:0 auto;
+    }
+    section {
+      /* padding:50px 100px */
+      padding:2rem; /*body 지정된 글자 크기의 2배*/
+      border:10px dashed #000;
+      border-left: 0;
+      border-right: 0;
+      /* margin:2rem 0; */
+
+    }
+    .section1{background-color:rgb(226, 146, 48);}
+    .section2{background-color:rgb(65, 203, 235);}
+    .section3{background-color:rgb(66, 235, 111);}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+  
+    <div class="slide">
+      슬라이드
+    </div>
+  
+    <section class="section1">
+      <h1>section1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima perferendis odit nemo exercitationem. Animi, culpa quisquam mollitia quis eaque unde, in, delectus accusamus corrupti repellat aliquid iste iure laborum illo?</p>
+    </section>
+    <section class="section2">
+      <h1>section2</h1>
+      <p>At corrupti fuga quis ad doloribus consequatur? Similique laboriosam pariatur veritatis quasi ipsam nostrum placeat possimus totam rem necessitatibus sed voluptatum, inventore voluptates veniam! Qui repellat consectetur soluta est ad.</p>
+    </section>
+    <section class="section3">
+      <h1>section3</h1>
+      <p>Rerum tenetur odio deserunt corrupti amet atque, aspernatur ut ad labore voluptatum quam ex cupiditate officiis quasi reiciendis eius dicta voluptatem nulla expedita quae nihil perspiciatis dolorem. Fugit, reprehenderit maxime.</p>
+    </section>
+    <div class="notice">
+      공지사항
+    </div>
+</div>
+</body>
+</html>

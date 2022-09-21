@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background-origin</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .ex{
+      width: 400px;
+      height: 500px;
+      margin: 50px auto;
+      border: 10px dotted #000;
+      padding: 50px;
+      box-sizing: border-box;
+      background-color: #ccc;
+      background-image: url(background/images/bg.jpg);
+      background-repeat: repeat;
+      background-size: contain;
+      /* background-origin: content-box; */
+      background-origin: padding-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="ex"></div>
+</body>
+</html>
