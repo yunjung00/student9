@@ -7,9 +7,8 @@
   <title>background-attachement</title>
   <style>
     *{margin:0; padding: o;}
-    .wrap{
-
-    }
+    /*width를 말하지 않으면 기본적 auto 부모의 콘텐츠영역*/
+    .wrap{}
     section{
       height: 100vh;
       padding: 50px;
@@ -17,16 +16,17 @@
 
     }
     .section1{background-color: rgb(210, 143, 50);}
-    .section2{background-color: rgb(50, 210, 77);
+    .section2{
+      height: 500px;
+      background-color: rgb(50, 210, 77);
       background-image: url(background/images/bg.jpg);
       background-repeat: no-repeat;
+      /* background-position: center center; */
       /* background-attachment: fixed; */
       /* background-position: center 100%; */
       background-position: center bottom;
       background-attachment: scroll;
       background-size: cover;
-      
-
     }
   
     .section3{background-color: rgb(50, 138, 210);}
