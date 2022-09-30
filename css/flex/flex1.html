@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex layout 수직수평가운데</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0
+    }
+    .container{
+      /* 너비제한 */
+    }
+    .parent{
+      display: flex;
+      
+      /* flex item 수평가운데 */
+      justify-content: center;
+      /* 플렉스아이템 교차축 가운데 */
+      /* align-items: center;
+      center, flex-start, flex-end 지정하면 자신의 높이만 인식 */
+
+      align-items: center;
+      height: 100vh;
+      box-sizing: border-box;
+      background-color: #ccc;
+    }
+    .child{
+      background-color: #999;
+      
+    }
+    .child span{
+      display: block;
+      text-align: center;
+
+    }
+
+    .child span:nth-child(1){
+      font-size: 50px;
+      font-weight: 700;}
+    .child span:nth-child(2){
+      font-size: 1.5rem;
+      font-weight: 1.5px;
+    }
+    
+
+
+  
+  </style>
+</head>
+
+<body>
+  <div class="contianer">
+    <div class="parent">
+      <div class="child">
+        <span class="span1">Header Title</span>
+        <span class="span2">short description some word</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
