@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>네비게이션2</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    ul,ol,li{list-style: none;}
+
+    /* 공통 
+    사용자정의속성
+    -대소문자 구분, 선택자의 후손들에게 상속됨. 최상위에 선언하기 :root*/
+
+    :root{
+      --hearer-height:150px;
+      --section-max-width:1200px
+    }
+
+    /*  */
+    .wrap{}
+
+    header{
+      height: var(--hearer-height);
+      position: relative;
+      background-color: #f8f;
+    }
+    header .header_wrap{
+
+      display: flex;
+      justify-content: space-between;
+      /* 양끝정렬 균등여백 */
+      align-items: center;
+      /* 교차축가운데 */
+      background-color: #fe8;
+      width: 90%;
+      max-width: var(--section-max-width);
+      margin: 0 auto;
+    }
+    header .header-wrap .logo{
+      width: 120px ; height: 80px;
+      background-color: #000;
+    }
+    header .header-wrap .util{
+      /* margin-left: auto; */
+      width: 80px; height: 80px;
+      background-color: #000;
+    }
+
+    nav{
+      /* padding: 1rem;  */
+      background-color: #ccc;
+    }
+    .nav-wrap{
+      /* padding: 1rem;  */
+      background-color: #999;
+    }
+    .nav-wrap>ul{
+      /* 플렉스 컨테이너 */
+      display: flex;
+      justify-content: center;
+      background-color: #666;
+      /* padding: 1rem; */
+    }
+    .nav-wrap li.d1{
+      
+      /* 플렉스아이템 */
+      
+      background-color: #333;
+      padding: 0rem 1.5rem;
+      line-height: var(--header-height);
+      /* height: var(--header-height); */
+    }
+    .nav-wrap li.d1 div.d2{
+      display: none;
+      position: absolute;
+      /* 가까운 조상중에 rerative */
+      left: 0; top: var(--header-height);
+      background-color: #ccc;
+      border: 1px solid #f00;
+      width: 100%;
+      /* 기준요소? */
+      line-height: 1.5;
+    }
+    .nav-wrap li.d1:hover div.d2{
+      display: block;
+    }
+    .nav-wrap li.d1 div.d2 ul{
+      /* 플렉스컨테이너 */
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      width: 90%;
+      max-width: var(--section-max-width);
+      background-color: #999;
+    }
+    .nav-wrap li.d1 div.d2 ul li{
+      /* 플렉스아이템 */
+      padding: 1rem 1.5rem;
+    }
+
+    
+
+  </style>
+</head>
+<body>
+  <!-- 아키테이블 d2 스타일 -->
+  <div class="wrap">
+    <header><div class="header_wrap">
+        <div class="logo">로고</div>
+        <nav>
+          <div class="nav-wrap">
+            <ul>
+              <li class="d1 menu1">
+                menu1
+                <div class="d2">
+                  <ul>
+                    <li class="sub1">sub11</li>
+                    <li class="sub2">sub12</li>
+                    <li class="sub3">sub13</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="d1 menu2">
+                menu2
+                <div class="d2">
+                  <ul>
+                    <li class="sub1">sub21</li>
+                    <li class="sub2">sub22</li>
+                    <li class="sub3">sub23</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="d1 menu3">
+                menu3
+                <div class="d2">
+                  <ul>
+                    <li class="sub1">sub31</li>
+                    <li class="sub2">sub32</li>
+                    <li class="sub3">sub33</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="d1 menu4">
+                menu4
+                <div class="d2">
+                  <ul>
+                    <li class="sub1">sub41</li>
+                    <li class="sub2">sub42</li>
+                    <li class="sub3">sub43</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="util">util</div>
+      
+    </div></header>
+  </div>
+
+  
+
+</body>
+</html>

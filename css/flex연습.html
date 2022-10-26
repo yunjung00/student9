@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .wrap{
+      margin: 50px;
+      padding: 1rem;
+      /* background-color: #ccc; */
+    }
+    .parent{
+      /* min-width: 1190px; */
+      max-width: 1190px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      /*플렉스 컨테이너보다 아이템이 커서 넘쳐나면 줄마꿈 여부를 결정하는것
+      flex-wrap: nowrap; 기본값 */
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      padding: 1rem;
+      box-sizing: border-box;
+      /* background-color: #999; */
+    }
+    .parent .item{
+      /* 플렉스 컨테이너 공간에 맞게 플렉스 아이템을 확장
+      flex-glow:0; 기본값 */
+      flex-grow: 0;
+      /* 플렉스 컨테이너의 공간에 맞게 축소
+      flex-shrink:1;  기본값*/
+      flex-shrink: 0;
+      /* width: 25%; 4단
+         width: 33.33%; 3단*/
+      width: 33.33%;
+
+     
+      padding: 1rem;
+      /* border:1px solid #000; */
+      box-sizing: border-box;
+      /* background-color: #666; */
+    }
+    .parent .item .inner{
+      background-color: #ef8;
+      height: 300px;
+      box-sizing: border-box;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="parent">
+      <div class="item item1">
+        <div class="inner">item1</div>
+      </div>
+      <div class="item item2">
+        <div class="inner">item2</div>
+      </div>
+      <div class="item item3">
+        <div class="inner">item3</div>
+      </div>
+      <div class="item item4">
+        <div class="inner">item4</div>
+      </div>
+      <div class="item item5">
+        <div class="inner">item5</div>
+      </div>
+      <div class="item item6">
+        <div class="inner">item6</div>
+      </div>
+      <div class="item item7">
+        <div class="inner">item7</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
