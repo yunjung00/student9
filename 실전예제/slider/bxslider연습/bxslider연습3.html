@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bxSlider CSS file -->
+<link href="src/css/jquery.bxslider.css" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+  <title>bxslider_내쇼핑몰메인배너연습</title>
+</head>
+<body>
+
+<ul class="mainVisual">
+  <li><img src="../images/img_mainVisual1.jpg" /></li>
+  <li><img src="../images/img_mainVisual2.jpg" /></li>
+  <li><img src="../images/img_mainVisual3.jpg" /></li>
+  <li><img src="../images/img_mainVisual4.jpg" /></li>
+  <li><img src="../images/img_mainVisual5.jpg" /></li>
+</ul>
+
+<!-- jQuery library -->
+<script src="src/vendor/jquery-3.1.1.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="src/js/jquery.bxslider.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.mainVisual').bxSlider({
+			// mode: 'horizontal',
+			mode: 'fade',
+			moveSlides: 1,
+			// slideMargin: 40,
+			infiniteLoop: true,
+			slideWidth: 1820,
+			// minSlides: 3,
+			// maxSlides: 3,
+			speed: 800,
+		});
+	});
+</script>
+ 
+</body>
+</html>
